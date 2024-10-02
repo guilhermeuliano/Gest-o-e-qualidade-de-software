@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.7 on win32)" generated="2024-10-02T11:39:50.749196" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicio Amazon.Robot" source="C:\VSCode\Faculdade\Gestão e qualidade de software\exercicio_amazon.robot">
+<suite id="s1-s1" name="Exercicio Amazon" source="C:\VSCode\Faculdade\Gestão e qualidade de software\exercicio_amazon.robot\exercicio_amazon.robot">
+<test id="s1-s1-t1" name="Pesquisa de Smartphone na Amazon" line="16">
+<kw name="Pesquisar Produto na Amazon">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:39:50.967923" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-02T11:39:50.967923" elapsed="2.887820"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:39:53.857246" level="INFO">Typing text 'smartphone' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:39:53.856743" elapsed="0.157463"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:39:54.015206" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-02T11:39:54.014206" elapsed="1.730322"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:39:50.967923" elapsed="4.777606"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-02T11:39:55.773195" level="INFO">Current page contains text 'smartphone'.</msg>
+<arg>${PRODUTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-02T11:39:55.745529" elapsed="0.027666"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-02T11:39:55.773195" elapsed="2.131490"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:39:50.966623" elapsed="6.938062"/>
+</test>
+<status status="PASS" start="2024-10-02T11:39:50.779263" elapsed="7.126423"/>
+</suite>
+<status status="PASS" start="2024-10-02T11:39:50.751198" elapsed="7.155489"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio Amazon.Robot">Exercicio Amazon.Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Exercicio Amazon">Exercicio Amazon.Robot.Exercicio Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
